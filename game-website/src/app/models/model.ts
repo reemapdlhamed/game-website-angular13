@@ -13,7 +13,8 @@ export interface Game {
   screenshots: Array<Screenshots>;
   trailers: Array<Trailer>;
   slug:string,
-  id:string
+  id:string,
+  results:any
 }
 export interface APIResponce<T> {
   results: Array<T>;

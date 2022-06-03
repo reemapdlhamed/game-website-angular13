@@ -1,0 +1,30 @@
+<div class="details">
+  <div class="game-banner">
+    <img src="" alt="" class="game-banner-img" />
+  </div>
+  <div class="game-content">
+    <div class="details-wrapper">
+      <div class="game-header">
+        <h1 class="game-header-title">GameName</h1>
+        <h2 class="game-header-releas-date">Relesae : 1-1-2020</h2>
+        <p class="game-header-genres">
+          <span>RbG</span>
+        </p>
+        <div class="game-gauge">
+          <mwl-gauge
+            class="two"
+            [max]="100"
+            [dialStartAngle]="180"
+            [dialEndAngle]="0"
+            [value]="gameRating"
+            [animated]="true"
+            [color]="getColor"
+            [animationDuration]="2"
+          ></mwl-gauge>
+          <a href="" target="_blank" class="game-gauge-label">Metacritic</a>
+        </div>
+      </div>
+      <!-- Tabs -->
+    </div>
+  </div>
+</div>
