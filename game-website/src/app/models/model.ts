@@ -1,5 +1,5 @@
 export interface Game {
-  background_image: string;
+  image_background: string;
   name: string;
   released: string;
   metacritic_url: string;
@@ -12,6 +12,8 @@ export interface Game {
   ratings: Array<Rating>;
   screenshots: Array<Screenshots>;
   trailers: Array<Trailer>;
+  slug:string,
+  id:string
 }
 export interface APIResponce<T> {
   results: Array<T>;

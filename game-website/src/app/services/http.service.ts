@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { environment as env } from 'src/environments/environment';
 import { Game } from '../models/model';
 import { APIResponce } from '../models/model';
-// import { environment as env } from 'src/environments/environment.prod';
+
 @Injectable({
   providedIn: 'root',
 })
@@ -18,7 +18,7 @@ export class HttpService {
     if (search) {
       params = new HttpParams().set('ordering', ordering).set('search', search);
     }
-    return this.http.get<APIResponce<Game>>(`${env.BASE_URL}/games `, {
+    return this.http.get<APIResponce<Game>>(`${env.BASE_URL} `, {
       params: params,
     });
   }
